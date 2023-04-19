@@ -35,6 +35,11 @@ You are provided with a GoLang project structure, which, when complete, will all
 
 The files server\_setup.go, raft\_node.go and raft\_cluster.go require no modification. raft\_node.go, however, contains vital information about the persistent state of a raft node itself, and is worth going through to better understand the flow of the code.
 
+Changes should be made to 
+- raft_leader_logic.go
+- raft_election_logic.go
+- raft_rpc_handlers.go
+
 ## **How you should start:**
 
 Start off by installing GoLang. [Here](https://go.dev/doc/install) is a link to the official guide.
@@ -74,11 +79,4 @@ The above command executes a couple of scenarios for your code. Read through the
   <img src="images/test2.png" />
 </p>
 
-You could also instead tail -f the files with tmux, like you did for Experiment 4.
-
-For evaluation, you will need to walk through the output you got from the Tests 1 and 2 and explain why it's expected behaviour. You will also need to then execute test-cases given to you later and do the same. **(Test 3 given to you will fail by default; it's your job to explain why and how to fix it.) (refer to the last paragraph of 'how you should start')**
-
-
-## **For queries, contact:**
-
-**RR Campus:** [**tacloudcomputing@gmail.com**](mailto:tacloudcomputing@gmail.com)
+You could also instead tail -f the files with tmux.
