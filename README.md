@@ -35,6 +35,16 @@ You are provided with a GoLang project structure, which, when complete, will all
 
 The files server\_setup.go, raft\_node.go and raft\_cluster.go require no modification. raft\_node.go, however, contains vital information about the persistent state of a raft node itself, and is worth going through to better understand the flow of the code.
 
+## **FUNCTIONALITIES WHICH HAVE BEEN IMPLEMENTED:**
+
+You are expected to implement **4** specific functionalities:
+
+1. Implement the **becomeFollower** function entirely.
+2. Implement the logic for a **follower** node to handle a received **RequestVote function** from a candidate.
+3. Implement the logic for a **candidate** to handle a reply to the above RequestVote it sent out to its peers, be it successfully or unsuccessfully.
+4. Implement the logic for the **leader** to commit its log successfully in the event of majority confirmation, or fail in case majority confirmation is not received.
+
+
 Changes should be made to 
 - raft_leader_logic.go
 - raft_election_logic.go
@@ -52,14 +62,6 @@ Familiarise yourself with Raft Leader Election and Log Replication, i.e up until
 
 The scenarios we deal with here do not include complete node failure, although it is trivial to account for such a case by asking recovered nodes to replay their logs. Instead, we deal with **partitioned** nodes; i.e, a 'disconnected node' is a node that is still functioning, but is cut off from the rest of the cluster. Think along the lines of 'its internet failed.' **KNOWING THIS IS IMPORTANT FOR YOUR EVALUATION.**
 
-## **What's expected of you:**
-
-You are expected to implement **4** specific functionalities:
-
-1. Implement the **becomeFollower** function entirely.
-2. Implement the logic for a **follower** node to handle a received **RequestVote function** from a candidate.
-3. Implement the logic for a **candidate** to handle a reply to the above RequestVote it sent out to its peers, be it successfully or unsuccessfully.
-4. Implement the logic for the **leader** to commit its log successfully in the event of majority confirmation, or fail in case majority confirmation is not received.
 
 These four functionalities' locations become apparent once you go through the codebase, and read through [the Raft paper.](http://raft.github.io/raft.pdf)
 
