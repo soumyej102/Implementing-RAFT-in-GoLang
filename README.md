@@ -3,10 +3,10 @@ CLOUD COMPUTING - UE20CS351
 # Implementing Raft Logic in Go
 
 # TEAM MEMBERS:
-## - Soumye Joshi (PES2UG20CS346)
-## - Tanya Arora (PES2UG20CS367)
-## - Soubhagya Ranjan Sahoo (PES2UG20CS345)
-## - Shruthika Anand (PES2UG20CS334)
+ - Soumye Joshi (PES2UG20CS346)
+ - Tanya Arora (PES2UG20CS367)
+ - Soubhagya Ranjan Sahoo (PES2UG20CS345)
+ - Shruthika Anand (PES2UG20CS334)
 
 ## **In this project, you will:**
 
